@@ -172,6 +172,8 @@
     <Content Include="Views\My\GetIp.cshtml" />
     <Content Include="Views\Home\MyAction.cshtml" />
     <Content Include="Views\Home\UlLi.cshtml" />
+    <Content Include="Views\My\GetName.cshtml" />
+    <Content Include="Views\My\TempAction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

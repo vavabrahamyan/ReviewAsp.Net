@@ -21,6 +21,18 @@ namespace ReviewAspNet.Controllers
         {
             return View();
         }
+        public ActionResult GetName()
+        {
+            return View();
+        }
+        public ActionResult TempAction(int ip)
+        {
+            if(ip > 5)
+            {
+                return View();
+            }
+            return Redirect("GetIp");
+        }
         public string GetAge(int age)
         {
             return $"<h1> Age is {age}<h1>";
