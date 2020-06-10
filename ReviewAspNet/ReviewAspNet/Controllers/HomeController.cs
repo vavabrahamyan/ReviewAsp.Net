@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Ajax.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,7 +9,23 @@ namespace ReviewAspNet.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ViewResult Index()
+        {
+            ViewData["Head"] = long.MaxValue;
+
+            ViewBag.Fruits = new List<string>
+            {
+                "Apple", "Peach", "Lemon", "Pineapple"
+            };
+
+            return View("UlLi");
+        }
+        public ViewResult MyAction()
+        {
+            ViewData["Head"] = "hello world(MyAction)";
+            return View();
+        }
+        public ActionResult UlLi()
         {
             return View();
         }
