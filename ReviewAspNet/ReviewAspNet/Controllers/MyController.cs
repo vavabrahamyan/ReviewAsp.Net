@@ -29,9 +29,9 @@ namespace ReviewAspNet.Controllers
         {
             if(ip > 5)
             {
-                return View();
+                return RedirectToAction("Square", new { a = 8, h = 9 });
             }
-            return Redirect("GetIp");
+            return RedirectToRoute(new { controller = "My", action = "GetName"});
         }
         public string GetAge(int age)
         {
@@ -46,7 +46,7 @@ namespace ReviewAspNet.Controllers
             int a = Int32.Parse(Request.Params["a"]);
             int h = Int32.Parse(Request.Params["h"]);
 
-            int s = a * h / 2;
+            int s = a - h ;
 
             return $"Squares area is {s}";
         }
