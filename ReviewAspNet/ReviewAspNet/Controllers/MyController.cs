@@ -17,6 +17,14 @@ namespace ReviewAspNet.Controllers
         //    var response = requestContext.HttpContext.Response;
         //    response.Write($"<h2> your ip is - {ip}<h2>");
         //}
+        public ActionResult GetVoid(int? ip)
+        {
+            if(ip > 3)
+            {
+                return HttpNotFound();
+            }
+            return new HttpUnauthorizedResult();
+        }
         public ActionResult GetIp()
         {
             return View();
