@@ -1,10 +1,16 @@
 ﻿using System.IO;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Web.Mvc;
 
 namespace ReviewAspNet.Controllers
 {
     public class FileController:Controller
     {
+        public string GetData()
+        {
+            string id = HttpContext.Request.Cookies["id"].Value;
+            return id.ToString();
+        }
         // downloading file
         public FilePathResult GetFile()
         {

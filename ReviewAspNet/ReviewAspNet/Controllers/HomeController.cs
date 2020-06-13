@@ -11,6 +11,7 @@ namespace ReviewAspNet.Controllers
     {
         public ViewResult Index()
         {
+            HttpContext.Response.Cookies["id"].Value = "cg78-t1";
             ViewData["Head"] = long.MaxValue;
 
             ViewBag.Fruits = new List<string>

@@ -20,7 +20,6 @@ namespace ReviewAspNet.Controllers
             string referrer = HttpContext.Request.UrlReferrer == null ? "" : HttpContext.Request.UrlReferrer.AbsoluteUri;
             return $"<p>Browser: {browser}</p><p>User-Agent: {user_agent}</p><p>Request Url: {url}</p><p>Referrer: {referrer}</p>" +
                 $"<p>IP-adress: {ip}</p>";
-                
         }
         //public void Execute(RequestContext requestContext)
         //{
