@@ -9,8 +9,19 @@ using System.Web.Routing;
 
 namespace ReviewAspNet.Controllers
 {
-    public class MyController :  Controller , IController
+    public class MyController : Controller, IController
     {
+        public string GetContext()
+        {
+            string browser = HttpContext.Request.Browser.Browser;
+            string user_agent = HttpContext.Request.UserAgent;
+            string url = HttpContext.Request.RawUrl;
+            string ip = HttpContext.Request.UserHostAddress;
+            string referrer = HttpContext.Request.UrlReferrer == null ? "" : HttpContext.Request.UrlReferrer.AbsoluteUri;
+            return $"<p>Browser: {browser}</p><p>User-Agent: {user_agent}</p><p>Request Url: {url}</p><p>Referrer: {referrer}</p>" +
+                $"<p>IP-adress: {ip}</p>";
+                
+        }
         //public void Execute(RequestContext requestContext)
         //{
         //    var ip = requestContext.HttpContext.Request.UserHostAddress;

@@ -10,7 +10,7 @@ namespace ReviewAspNet.Controllers
         {
             string filePath = Server.MapPath(@"~\Files\Vahe's Resume.pdf");
 
-            string fileType = "Application/pdf";
+            string fileType = "Application/octet-stream";
 
             string fileName = "Vahe's Resume.pdf";
 
@@ -23,7 +23,7 @@ namespace ReviewAspNet.Controllers
 
             byte[] arr = System.IO.File.ReadAllBytes(filePath);
 
-            string fileType = "Application/pdf";
+            string fileType = "Application/octet-stream";
 
             string fileName = "Vahe's Resume.pdf";
 
@@ -36,7 +36,7 @@ namespace ReviewAspNet.Controllers
 
             FileStream fs = new FileStream(filePath, FileMode.Open);
 
-            string fileType = "Application/pdf";
+            string fileType = "Application/octet-stream";
 
             string fileName = "Vahe's Resume.pdf";
 
