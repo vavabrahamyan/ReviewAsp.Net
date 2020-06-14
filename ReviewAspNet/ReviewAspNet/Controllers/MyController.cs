@@ -98,7 +98,7 @@ namespace ReviewAspNet.Controllers
             string path = @"C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\ReviewAspNet\Content\images\Captures 5_4_2020 2_31_01 PM.png";
             return new ImageResult(path);
         }
-
+        // ...
         
     }
 }
