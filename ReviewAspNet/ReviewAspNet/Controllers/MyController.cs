@@ -44,7 +44,7 @@ namespace ReviewAspNet.Controllers
             return View();
         }
         public ActionResult TempAction(int ip)
-        {
+        { 
             if(ip > 5)
             {
                 return RedirectToAction("Square", new { a = 8, h = 9 });
@@ -90,13 +90,15 @@ namespace ReviewAspNet.Controllers
         {
             return new HtmlResult("<p>Hello world</p>");
         }
+         
+        // Getting image
 
         public ActionResult GetImage()
         {
             string path = @"C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\ReviewAspNet\Content\images\Captures 5_4_2020 2_31_01 PM.png";
             return new ImageResult(path);
         }
-
+        // ...
         
     }
 }
