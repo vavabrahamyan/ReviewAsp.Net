@@ -30,7 +30,7 @@ namespace AsyncTaskApp.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(new Book { Name = "Bla-Bla", Author = "He", Price = 1800, Id = 1 } );
         }
 
         public ActionResult Contact()
