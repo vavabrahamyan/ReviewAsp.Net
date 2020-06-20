@@ -9,7 +9,11 @@ namespace ArrayMvcApp.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Author { get; set; }
-        public int Price { get; set; }
+    }
+    public class Author
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public ICollection<Book> Books { get; set; }
     }
 }

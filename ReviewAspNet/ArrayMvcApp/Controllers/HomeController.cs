@@ -42,19 +42,29 @@ namespace ArrayMvcApp.Controllers
             }
             return fin;
         }
+        //[HttpGet]
+        //public ActionResult Edit()
+        //{
+        //    List<Book> books = new List<Book>();
+        //    books.Add(new Book { Author = "A", Name = "A_book", Price = 190 });
+        //    books.Add(new Book { Author = "B", Name = "B_book", Price = 260 });
+        //    books.Add(new Book { Author = "C", Name = "C_book", Price = 110 });
+        //    return View(books);
+        //}
+        //[HttpPost]
+        //public string Edit(List<Book> books)
+        //{
+        //    return books.Count.ToString();
+        //}
         [HttpGet]
-        public ActionResult Edit()
+        public ActionResult GetAuthor()
         {
-            List<Book> books = new List<Book>();
-            books.Add(new Book { Author = "A", Name = "A_book", Price = 190 });
-            books.Add(new Book { Author = "B", Name = "B_book", Price = 260 });
-            books.Add(new Book { Author = "C", Name = "C_book", Price = 110 });
-            return View(books);
+            return View();
         }
         [HttpPost]
-        public string Edit(List<Book> books)
+        public ActionResult GetAuthor(Author author)
         {
-            return books.Count.ToString();
+            return View();
         }
     }
 }
