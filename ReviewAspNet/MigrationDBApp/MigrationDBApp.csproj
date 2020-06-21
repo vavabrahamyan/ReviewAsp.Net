@@ -131,6 +131,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006211907521_InitialCreate.cs" />
+    <Compile Include="Migrations\202006211907521_InitialCreate.designer.cs">
+      <DependentUpon>202006211907521_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006211917243_MigrateDB.cs" />
+    <Compile Include="Migrations\202006211917243_MigrateDB.designer.cs">
+      <DependentUpon>202006211917243_MigrateDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006211925075_AddCompanyField.cs" />
+    <Compile Include="Migrations\202006211925075_AddCompanyField.designer.cs">
+      <DependentUpon>202006211925075_AddCompanyField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -187,6 +200,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006211907521_InitialCreate.resx">
+      <DependentUpon>202006211907521_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006211917243_MigrateDB.resx">
+      <DependentUpon>202006211917243_MigrateDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006211925075_AddCompanyField.resx">
+      <DependentUpon>202006211925075_AddCompanyField.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
