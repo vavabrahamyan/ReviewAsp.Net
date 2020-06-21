@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTaskApp", "AsyncTaskAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMvcApp", "ArrayMvcApp\ArrayMvcApp.csproj", "{D3D28FE0-B07D-42BD-A218-D7E938DC9EC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationDBApp", "MigrationDBApp\MigrationDBApp.csproj", "{C9CFE2FF-34C7-43B4-961B-00C0C8931CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D3D28FE0-B07D-42BD-A218-D7E938DC9EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D28FE0-B07D-42BD-A218-D7E938DC9EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D28FE0-B07D-42BD-A218-D7E938DC9EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9CFE2FF-34C7-43B4-961B-00C0C8931CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9CFE2FF-34C7-43B4-961B-00C0C8931CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9CFE2FF-34C7-43B4-961B-00C0C8931CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9CFE2FF-34C7-43B4-961B-00C0C8931CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
