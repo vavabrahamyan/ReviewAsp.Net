@@ -17,6 +17,11 @@ namespace AreaTestApp.Controllers
         {
             return View();
         }
+        public ActionResult Edit()
+        {
+            LogModel lm = new LogModel { Login = ".parliament.", Password = "pdfasda" };
+            return View(lm);
+        }
         public ActionResult Details()
         {
             var book = db.Books.FirstOrDefault();

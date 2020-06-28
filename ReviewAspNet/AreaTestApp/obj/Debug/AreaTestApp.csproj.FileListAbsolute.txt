@@ -84,3 +84,7 @@ C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\obj\
 C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\obj\Debug\AreaTestApp.csproj.CopyComplete
 C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\obj\Debug\AreaTestApp.dll
 C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\obj\Debug\AreaTestApp.pdb
+C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\bin\EntityFramework.dll
+C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\bin\EntityFramework.xml
+C:\Users\user\Desktop\Working_Folder\ReviewAsp.Net\ReviewAspNet\AreaTestApp\bin\EntityFramework.SqlServer.xml
