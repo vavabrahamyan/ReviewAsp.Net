@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Ajax.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,7 +10,8 @@ namespace ValiditationApp.Controllers
 {
     public class HomeController : Controller
     {
-        BookContext db = new BookContext();
+        //BookContext db = new BookContext();
+        UserContext db = new UserContext();
         Book book = new Book();
         public ActionResult Index()
         {
@@ -29,17 +31,17 @@ namespace ValiditationApp.Controllers
 
             return View();
         }
+        [HttpGet]
         public ActionResult Create()
         {
-            ViewBag.Book = book;
             return View();
         }
         [HttpPost]
-        public ActionResult Create(Book book)
+        public ActionResult Create(User user)
         {
             if (ModelState.IsValid)
             {
-                db.Books.Add(book);
+                db.Users.Add(user);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
