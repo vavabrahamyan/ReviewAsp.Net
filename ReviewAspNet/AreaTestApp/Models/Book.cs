@@ -5,7 +5,6 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
-
 namespace AreaTestApp.Models
 {
     public class Book
